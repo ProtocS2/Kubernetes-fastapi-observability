@@ -1,0 +1,31 @@
+loki:
+  auth_enabled: false
+  useTestSchema: true
+
+deploymentMode: SingleBinary
+
+singleBinary:
+  replicas: 1
+
+read:
+  replicas: 0
+
+write:
+  replicas: 0
+
+backend:
+  replicas: 0
+
+gateway:
+  enabled: true
+
+minio:
+  enabled: true
+
+ignoreMinioDeprecation: true
+
+lokiCanary:
+  enabled: false
+
+test:
+  enabled: false
